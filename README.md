@@ -66,11 +66,10 @@ This should display the help text for the executable. If you get an error instea
 
 If you get an error like this then you need to install the Microsoft Visual C++ package.
 
-![Machine generated alternative text: ‘1compare\_data.exe-System Error
+![System Error
 Q The program can’t start because api-ms-win-crt-stdio-l1-1-OdIl is
 ‘ missing from your computer. Try reinstalling the program to fix this
-problem.](/media/image1.png){width="4.395833333333333in" height="1.65625in"}
-
+problem.](https://i.imgur.com/eTgqVN4.png)
  
 
 See [this link](http://www.thewindowsclub.com/api-ms-win-crt-runtime-l1-1-0-dll-is-missing) for more information.
