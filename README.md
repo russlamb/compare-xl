@@ -171,6 +171,6 @@ By default, the tool uses the following parameters that can be overridden on the
 | -db_left | Prod database | Connection string for a database |
 | -db_right | QA database | Connection string for a database |
 | -index | None | (optional) An integer indicating   which column to use as an index when comparing files.  This will line up the two files so that the   index values match when comparing differences.  If index value is not unique, it will use   the last row with each given index value.    Non-intersecting rows are excluded from the comparison. |
-| -sql | None | A SQL statement  |
+| -sql | None | A SQL statement.  Mutually exclusive with -compare  |
 | -sheet | Output | Any name you want for the sheet |
-| -compare | None | Use this flag to compare existing   excel files.  No SQL will be run.   |
+| -compare | None | Use this flag to compare existing   excel files.  No SQL will be run.  Mutually exclusive with -sql |
