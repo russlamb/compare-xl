@@ -8,11 +8,11 @@ Thursday, February 08, 2018
 
 Often when making changes to a stored procedure or SQL object, testing if the changes have downstream impact can be difficult.
 
- 
+
 
 This tool automatically runs SQL on two servers, stores the results in Excel files, then compares the Excel files and stores differences in a spreadsheet.
 
- 
+
 
 ### Key benefits include
 
@@ -23,7 +23,7 @@ This tool automatically runs SQL on two servers, stores the results in Excel fil
 1.  Quick comparisons between production and Development or UAT systems
 
 2.  Compare any excel files quickly and automatically, meaning less developer time wasted doing excel comparisons
- 
+
 
 ## Setup
 
@@ -70,11 +70,11 @@ If you get an error like this then you need to install the Microsoft Visual C++ 
 Q The program can’t start because api-ms-win-crt-stdio-l1-1-OdIl is
 ‘ missing from your computer. Try reinstalling the program to fix this
 problem.](https://i.imgur.com/eTgqVN4.png)
- 
+
 
 See [this link](http://www.thewindowsclub.com/api-ms-win-crt-runtime-l1-1-0-dll-is-missing) for more information.
 
- 
+
 
 #### Download links
 
@@ -84,17 +84,17 @@ Depending on your machine, you may need one or the other
 
 [64 bit download](http://www.microsoft.com/en-us/download/details.aspx?id=14632)
 
- 
+
 
 ## How To Use
 
 Some default parameters can be configured using the config.ini file contained in the folder.
 
- 
+
 
 ### Run a SQL command on two databases and Compare
 
- 
+
 
 1.  Open a command line
 
@@ -104,7 +104,7 @@ Some default parameters can be configured using the config.ini file contained in
 
 Substitute "**select AssetID from Asset**" with your own SQL statement. Make sure to enclose the statement in quotes.
 
- 
+
 
 This will cause the executable to do the following:
 
@@ -114,7 +114,7 @@ This will cause the executable to do the following:
 
 1.  Compare the two excel files and save differences in Differences.xlsx
 
->  
+
 
 
 
@@ -122,7 +122,7 @@ This will cause the executable to do the following:
 
 After running, the example above you can try this example
 
- 
+
 
 1.  Open Command line
 
@@ -130,17 +130,16 @@ After running, the example above you can try this example
 
 2.  Run the command: **compare\_data.exe -compare -left Left.xlsx -right Right.xlsx**
 
- 
+
 
 To compare your own files, substitute **Left.xlsx** and **Right.xlsx** with of your own files.
 
- 
+
 
 This will cause the executable to:
 
 1.  Compare the files you passed in and save differences in Differences.xlsx
 
- 
 
 ### Examples
 
@@ -148,27 +147,23 @@ This will cause the executable to:
 
 Compare\_data.exe -sql "select AssetID from Asset"
 
- 
 
 #### Example Specifying overrides
 
 If I want to change the file names for left and right, I can do the following:
 
- 
 
 Compare\_data.exe -sql "select AssetID from Asset" -left "prod.xlsx" -right "test.xlsx"
 
- 
 
 This will store the production data in prod.xlsx and QA data in test.xlsx
 
- 
 
 #### List of command line flags and their defaults
 
 By default, the tool uses the following parameters that can be overridden on the command line:
 
- | Argument | Default | Description |
+| Argument | Default | Description |
 |-----------|--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | -left | ./Left.xlsx | First file for comparison |
 | -right | ./Right.xlsx | Second file for comparison |
