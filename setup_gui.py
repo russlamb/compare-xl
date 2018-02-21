@@ -21,10 +21,10 @@ executables = [
 
 include_files = [
     "config.ini",
-    #TODO: fix these to use a generic location
-    r"C:\Program Files\Python 3.5\DLLs\tcl86t.dll",
-    r"C:\Program Files\Python 3.5\DLLs\tk86t.dll",
-    r"C:\Program Files\Python 3.5\vcruntime140.dll",
+    #TODO: fix these to use a generic location.  You may need top copy these dlls to your build if you're using Windows. 
+    #r"C:\Program Files\Python 3.5\DLLs\tcl86t.dll",
+    #r"C:\Program Files\Python 3.5\DLLs\tk86t.dll",
+    #r"C:\Program Files\Python 3.5\vcruntime140.dll",
 
 ]
 includes = [
