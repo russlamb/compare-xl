@@ -174,3 +174,10 @@ By default, the tool uses the following parameters that can be overridden on the
 | -sql | None | A SQL statement.  Mutually exclusive with -compare  |
 | -sheet | Output | Any name you want for the sheet |
 | -compare | None | Use this flag to compare existing   excel files.  No SQL will be run.  Mutually exclusive with -sql |
+
+
+### UI
+
+A Tk based UI was added.  Two setup scripts were added, one for the UI and one for the command line.
+
+Each field corresponds with a command line flag.  
