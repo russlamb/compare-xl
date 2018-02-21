@@ -1,5 +1,5 @@
 import pyodbc
-
+import datetime
 import openpyxl
 
 
@@ -34,3 +34,4 @@ class SqlToXl():
                 colid += 1
 
         wb.save(filename)
+        print("Saved {} @ {}".format(filename,datetime.datetime.now() ))

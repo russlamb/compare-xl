@@ -48,8 +48,9 @@ if __name__ == "__main__":
     parser.add_argument("--version", action="version", version='%(prog)s {}'.format(config["version"]))
 
     args = parser.parse_args()
+    print("CLI arguments {}".format(args))
 
-    compare = CompareSqlInXl(args.db_left, args.db_left)
+    compare = CompareSqlInXl(args.db_left, args.db_right)
 
     if args.compare is False and args.sql is None:
         raise ValueError("You must either pass the -compare or -sql argument.  See --help for more.")
@@ -64,4 +65,4 @@ if __name__ == "__main__":
     else:
         print("running direct comparison (no index) {}".format(datetime.datetime.now()))
         compare.run(args.left, args.right, args.diff, args.sheet, args.sql)
-    print("finished {}", datetime.datetime.now())
+    print("finished {}".format( datetime.datetime.now()))
